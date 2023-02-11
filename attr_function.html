@@ -1,0 +1,37 @@
+// attr function is used to show or print some that you defined by yourself in data-.
+// Data- is new HTML property which allow you use your own values in form of string.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Function</title>
+        <style>
+            h1{
+                text-align: center;
+                font-size: 50px;
+                font-weight: 700;
+                font-family: 'Courier New', Courier, monospace;
+                line-height: 500px;
+                color: grey;
+            }
+
+            h1:hover::after{
+                content: attr(data-caption);
+                text-align: center;
+                font-size: 50px;
+                font-weight: 700;
+                font-family: 'Courier New', Courier, monospace;
+                line-height: 500px;
+                color: red;
+            }
+        </style>
+</head>
+<body>
+    <h1 data-caption="Dev">
+        Muhammad Shakir
+    </h1>
+</body>
+</html>
