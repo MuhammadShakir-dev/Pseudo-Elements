@@ -1,0 +1,65 @@
+// After and Before Pesudo Element Selector 
+// for better understanding of this let's take an exapmle.
+
+// <p>
+      ---------------------------------------------------------------------------
+      Here exsists ::before that means any child inside a para before its content
+      ---------------------------------------------------------------------------
+  
+      Hello world this is Muhammad Shakir dev. I hope you all are doing great.
+  
+      ---------------------------------------------------------------------------
+      Here exsists ::after that means any child inside a para after its content
+      ---------------------------------------------------------------------------
+  <p>
+
+// you don't use before and after without content.
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After & Before</title>
+        <style>
+                h1{
+                    text-align: center;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-size: 50px;
+                    color: grey;
+                    line-height: 500px;
+                }
+
+                h1::before{
+                    content: "I'm";
+                    background-color: red;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 50px;
+                    line-height: 500px;
+                    font-family: 'Courier New', Courier, monospace;
+                    margin: 0px 0px 0px 0px;
+                    padding: 5px;
+                }
+
+                h1::after{
+                    content: "Dev";
+                    background-color: white;
+                    color:red;
+                    font-weight: bold;
+                    font-size: 50px;
+                    line-height: 500px;
+                    font-family: 'Courier New', Courier, monospace;
+                    margin: 0px 0px 0px 0px;
+                    padding: 5px;
+
+                }
+        </style>
+</head>
+<body>
+    <h1>
+        Muhammad Shakir
+    </h1>
+</body>
+</html>
