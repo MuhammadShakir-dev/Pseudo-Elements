@@ -1,0 +1,67 @@
+// Selection comes in CSS-3 
+// If you select any text from any feild or any paragraph then the default background color is blue if you want to change it then you can use Selection
+// pseudo element selector.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First letter</title>
+        <style>
+        
+            p::selection{
+                background-color: black;
+                color: white;
+            }
+
+            li::selection{
+                background-color: black;
+                color: white;
+            }
+            
+        </style>
+  </head>
+  <body>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+      ratione est officiis odio dicta reprehenderit nostrum labore aliquid quam
+      eos vel et voluptate pariatur repudiandae vero eius assumenda doloremque
+      placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+      eum, non facilis cumque perspiciatis suscipit aperiam harum rem unde?
+      Cumque, minus! Nulla excepturi id optio fugit ut corrupti nostrum
+      reprehenderit.
+    </p>
+
+    <ul>
+      <li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quas.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quas.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quas.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quas.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quas.
+      </li>
+    </ul>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque facilis
+      pariatur temporibus cupiditate sequi, sapiente dolorem earum sunt rem
+      veritatis iure, praesentium provident eaque ducimus? Vero, ea ducimus.
+      Nobis, error?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      Placeat, in accusamus maiores perspiciatis asperiores illum! Tenetur
+      laborum architecto dolor repellat Lorem ipsum, dolor sit amet consectetur
+      adipisicing elit. Quidem perferendis laborum est similique voluptates
+      tenetur optio natus sint. Fuga nihil optio dignissimos dolor, dolores rem?
+      Quod voluptate rem labore! Blanditiis.
+    </p>
+  </body>
+</html>
